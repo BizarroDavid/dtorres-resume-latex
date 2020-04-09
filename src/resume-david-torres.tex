@@ -1,0 +1,360 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\publicationItem}[2]{
+    \item\small{
+      \textbf{#1}{ #2 \vspace{-2pt}}
+    }
+  }
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingJobPosition}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} - #5 & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+%-------------------------
+% Variables
+
+\newcommand{\name}{David Torres}
+\newcommand{\website}{https://www.linkedin.com/in/datorres/}
+\newcommand{\email}{torresdavid@gmail.com}
+\newcommand{\phone}{+1-512-825-5339}
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{\website}{\Large \name}} & Email : \href{mailto:\email}{\email}\\
+  \href{\website}{\website} & Mobile : \phone \\
+   & San Diego, CA\\
+\end{tabular*}
+
+%-----------Programming skills -----------------
+\section{Development Skills}
+\resumeSubHeadingListStart
+  \item{
+    \textbf{Languages}{: C\#, SQL, Go, Ruby, C/C++, JavaScript, Python, R, Java, Bash, Zsh, Powershell}        
+  }
+  \item{    
+    \textbf{Technologies}{: AWS, Azure, Docker, MySQL, SQL Server, .NETCore, REST, TypeScript, Linux, Windows, 
+    Real Time OSes, Git, XAML/MVVM, WebRTC, ML, Computer Vision}
+  }
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California at San Diego}{San Diego, CA}
+      {Master of Science in Computer Science (machine learning program)}{2004 -- 2009}
+    \resumeSubheading
+      {University of Texas at Austin}{Austin, TX}
+      {Bachelor's of Science in Computer Science}{1999 -- 2004}
+    \resumeSubheading
+    {University of Texas at Austin}{Austin, TX}
+    {Bachelor's of Science in Mathematics (scientific computation program)}{1999 -- 2004}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    % --- REFLEXION HEALTH ---
+    \resumeSubheadingJobPosition
+        {Reflexion Health}{San Diego, CA}
+        {Principal Software Engineer}{Jan 2019 - Mar 2020}
+        {A Gamified Teletherapy Company}
+        \resumeSubSubheading
+        {Lead Software Engineer}{Mar 2017 - Jan 2019}
+        \resumeItemListStart
+            \resumeItem{
+                Managed a team of up to 5 engineers and 6 off-shore consultants to develop our HIPAA regulated production services.
+                Released a major redesign of our product followed by quarterly releases.
+            }
+            \resumeItem{
+                Performed hands-on supervision of web app, backend and database development. Performed architecture, technical project management, 
+                implementation and bug fixing. (C\#, Rails, Go, JavaScript, MySQL)  
+            }
+            \resumeItem{
+                Architected, implemented, and project managed a 2-year long initiative to create a multi-tenant backend and migrate customer data. This enables 
+                steamlined management of patients and clients, will lead to a cost savings of 65\% over the legacy infrastructure, and reduces the client
+                on-boarding time from several weeks to down to zero.
+            }
+             \resumeItem{
+                Oversaw the architecture and implementation of our data-analytics backend consisting of our data processing pipelines and 
+                reporting services that management used to make informed and timely business decisions.
+            }
+            \resumeItem{
+                Contributed to the continuous improvement of the SDLC for my team by implementing containerized local development workflows, building automation and tooling, and 
+                driving agile-based process improvements.
+            }
+        \resumeItemListEnd
+            
+      
+    % --- SIGNAL GENETICS ---
+    \resumeSubheadingJobPosition
+        {Signal Genetics}{Carlsbad, CA}
+        {Principal Software Engineer}{Jan 2015 - Feb 2017}
+        {A Diagnostics Biotech Company}
+        \resumeItemListStart
+            
+            \resumeItem{                
+                Founded the company's development team, managing 2 engineers and 2 consultants to develop the company's information
+                processing infrastructure.
+            }
+
+            \resumeItem{
+                Designed a cloud-based microservice pipeline to process our test results.(Azure, Service Bus, Web Apps, Blob Storage.)
+            }
+
+            \resumeItem{
+                Developed a web app that allowed us to dramatically increase billing velocity. 
+                (AngularJS, MVC, WebAPI)
+            }
+
+            \resumeItem{
+                Developed REST APIs to interface with vendor systems to automate the collection of operational telemetry.
+            }           
+
+            \resumeItem{
+                Drove adoption of  software engineering best practices such as unit testing, CI, Git Flow and controlled release procedures.                
+            }
+
+            \resumeItem{
+                Managed consultants and vendors to maintain and extend the company's Lab Information System.
+            }
+
+            \resumeItem{
+                Developed formal software control policies and procedures to conform to SOX and HIPAA.
+            }
+
+        \resumeItemListEnd
+
+    % --- ANSSUR ---
+        \resumeSubheadingJobPosition            
+            {Anssur Corp.}{San Diego, CA}
+            {Software Engineer/Consultant}{July 2009 - Dec 2015}
+            {Analytics and Robotics Consulting (various companies)}
+
+            \resumeItemListStart
+                \resumeItem{Developed machine learning algorithms to detect traffic signs and traffic signals captured by camera-equipped field vehicles. 
+                Developed an SVM classifier architecture trained on HoG image features. Evaluated Viola-Jones based boosting classifiers. 
+                Developed custom software to generate labeled training data. (C\#, XAML, R, OpenCV, EmguCV)
+                }
+
+                \resumeItem{Developed software to control a minimally-invasive surgical robot: Designed and implemented a global, event-based state-handling 
+                framework to handle all sensor interactions (C++, Windows real-time OS, EtherCAT.) Also developed a
+                TCP/UDP based presentation framework that interfaced our real-time software with a tablet UI. (C\#, XAML, MVVM)
+                }
+
+                \resumeItem{Developed software for a specialized stethoscope for use in telemedicine applications. Software streams PCM audio 
+                across the internet to a desktop client. Performs up-sampling and down-sampling on PCM audio. Developed audio buffering algorithms
+                for internet transmission, including audio quality-of-service detection and audio error-correction (packet loss concealment.) 
+                (C++, DirectSound API, MFC)
+                }
+
+                \resumeItem{Full stack development of a flash-based analytics dashboard to visualize and analyze company-wide operational and sales data. 
+                (Adobe Flash/AIR, Apache Tomcat, Java, SQL Server)
+                }
+
+                \resumeItem{Developed software to rapidly prototype, visualize and profile image processing algorithms. Implemented
+                Otsu based thresholding to detect embryoid bodies in medical images.
+                }
+
+            \resumeItemListEnd
+
+    % --- VISION ROBOTICS  ---
+        \resumeSubheadingJobPosition
+             {Vision Robotics}{San Diego, CA}
+             {Software Engineer}{Apr 2008 - Jun 2009}
+             {Computer Vision and Robotics Company}
+
+            \resumeItemListStart
+                \resumeItem{Developed stereo image pair 3D reconstruction algorithms for use in robotic obstacle avoidance. 
+                    Implemented correlation based pixel matching methods and stereopsis for use in a robotic grapevine pruner
+                    and robotic apple picker. (C/C++)}
+                
+                \resumeItem{Developed algorithms for detecting, tracking and performing 3D reconstruction of grapevine anatomy 
+                across a time series of moving stereo pair images. Employed edge detection, watershed based skeletonization, Hough line transforms.}
+                
+                \resumeItem{Developed fast image interest point detection libraries based on Harris and Moravec corner detection algorithms.}
+                
+                \resumeItem{Investigated and developed object recognition methods for use in fruit detection. 
+                    Employed SVM and nearest neighbor classification techniques on SIFT-based bag-of-visual-words features for feasibility analysis.}
+                
+                \resumeItem{Conducted research of fruit color-space properties to improve color based object detection. 
+                    Employed GMM analysis on RGB and HSV color spaces to derive an efficient threshold based classification algorithm.}
+                
+                \resumeItem{(See video: \href{http://www.youtube.com/watch?v=9GaGO9LIDEA}{http://www.youtube.com/watch?v=9GaGO9LIDEA})}
+            \resumeItemListEnd
+
+    % --- UCSD RESEARCH ASSISTANT   ---
+        \resumeSubheading
+        {University of California at San Diego}{San Diego, CA}
+        {Graduate Research Assistant}{May 2006 - May 2009}        
+
+        \resumeItemListStart
+            \resumeItem{Conducted research on unsupervised machine learning methods to recognize musically meaningful words from a data set 
+                of audio and text annotations. Implemented a novel algorithm, Sparse CCA, to explore correlations between audio and text.
+                Used convex optimization packages SeDuMi, CVX, Mosek.}
+            \resumeItem{Helped develop a music auto-tagging and keyword search engine. Involved GMM analysis of audio features and text using
+                advanced EM methods (Mixture Hierarchies EM) to deal with large datasets.}
+
+            \resumeItem{Worked with team to develop software pipeline to analyze music and interface with web-facing database. 
+            Worked on software to interact with data base, perform audio feature extraction, and perform GMM analysis. (Java, PHP and MySQL)}
+
+            \resumeItem{Published several articles based on research.}
+
+        \resumeItemListEnd
+
+    
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------    
+  \resumeSubHeadingListEnd
+
+
+%-----------Publications-----------------
+\section{Publications}
+
+    \resumeItemListStart
+  
+    \publicationItem{Using Sparse CCA for Vocabulary Selection.}
+        {Masters Thesis, Univ. of California at San Diego (2009).}
+    
+    \publicationItem{Semantic Annotation and Retrieval of Music and Sound Effects.}
+        {IEEE Transactions on Audio, Speech and Language Processing, Volume: 16, Issue 2.
+    Douglas Turnbull, Luke Barrington, David Torres, and Gert Lanckriet (2008).}
+
+    \publicationItem{Finding Musically Meaningful Words by Sparse CCA.}
+        {Neural Information Processing Systems (NIPS) Workshop on Music, the Brain and Cognition. David Torres, Bharath K.
+    Sriperumbudur, and Gert Lanckriet (2007).}
+
+    \publicationItem{Sparse Eigen Methods by D.C. Programming.}
+        {ICML, International Conference on Machine Learning. Bharath K. Sriperumbudur, David Torres and Gert Lanckriet (2007).}
+
+    \publicationItem{Identifying Words that are Musically Meaningful.}
+        {ISMIR, International Conference on Music Information Retrieval. David Torres, Douglas Turnbull, Luke Barrington and Gert
+    Lanckriet (2007).}
+
+    \publicationItem{Towards Musical Query-by-Semantic Description using the CAL500 Data Set.}
+        {SIGIR, Special Interest Research Group on Information Retrieval. Douglas Turnbull, Luke
+    Barrington, David Torres and Gert Lanckriet (2007).}
+
+    \publicationItem{Semantic Similarity for Music Retrieval.}
+        {Music Information Retrieval Evaluation Exchange (MIREX). Audio Music Similarity Task - 3rd Place (no statistically significant
+    Difference between top 4 teams). Luke Barrington, Douglas Turnbull, David Torres, Gert Lanckriet
+    (2007).}
+
+    \publicationItem{Modeling the Semantics of Sound.}
+        {NIPS Workshop on Advances in Models for Acoustic Processing. Douglas Turnbull, Luke Barrington, David Torres, Gert Lanckriet (2006).}
+  
+    \resumeItemListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

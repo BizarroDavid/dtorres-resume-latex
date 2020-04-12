@@ -1,6 +1,6 @@
 # What is this? 
 
-This document builds my resume using LaTEX.
+This document builds my resume using LaTeX.
 
 # Prereqs
 
@@ -18,10 +18,18 @@ make build
 This outputs your resume into the publish directory. To develop just edit your tex file and run `make build` to see the 
 updates.
 
+# The publish process 
+
+When you are ready to "publish"
+
+* check in all your code 
+* tag the repo with the next version. 
+
 # How this works / Architecture 
 
 This project makes use of a public latex docker image (blang/latex) to compile your tex files. The convienence script 
 `latexdockercmd.sh` is used to run all your tex commands and for even more convienence, the `Makefile`  collects common commands you'll need. 
+
 
 # Other Stuff 
 
